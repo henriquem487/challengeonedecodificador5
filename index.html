@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENCRIPTADOR-ALURA</title>
+        <link rel="icon" href="img/candado.ico">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body" onload="iniciar();">
+
+        <canvas id="canvas"></canvas>
+        <div id="pagina">
+            <!--h1 logo alura-->
+
+            <div class="logo">
+                <h1><a href="https://www.alura.com.br//">a</a></h1>
+
+            </div>
+            <!--texto a encriptar-->
+            <div id="secText">
+                <label for="Digite aqui"> &#9888; Digite seu texto em letras minusculas sem acentos </label>
+                <span id="borrar" class="material-symbols-outlined">Apagar</span>
+                <textarea spellcheck="false"  type="text" id="Digite aqui" placeholder="Digite seu texto"></textarea>
+                <button id="reparar"><span class="material-symbols-outlined">build</span> Arrumar o texto</button>
+            </div>
+
+
+            <!--botão criptografia-->
+            <div class="botones">
+                <button id="btnEncriptar" class="boton">Encriptador</button>
+                <button id="btnDesencriptar" class="boton">Desencriptar</button>
+            </div>
+
+
+            <!--criptografia da mensagem-->
+            <div class="mensaje">
+                <img id="imagen" src="img/candado.png" alt="buscando">
+                <textarea  readonly id="msg" placeholder="Não encontramos um texto"></textarea>
+                <!--Botão de copiar texto-->
+                <button id="btnCopy" class="copiar">Copiar</button>
+            </div>
+
+
+            <footer class="foot">
+                <
+                <a href="https://www.linkedin.com/in/henriquepaslandim/"><img src="imagem/linkedin.png" alt="linkedin"></a>
+
+                <a href="https://github.com/henriquem487"><img src="imagem/github.png" alt="github"></a>
+
+
+                <p>&copy; Henrique<span>Paslandim</span></p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script2.js"></script>
+    </body>
+</html>
